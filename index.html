@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santosha Yoga Home - Dalat, Vietnam</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /*
+        ═══════════════════════════════════════════════════════════
+        SANTOSHA YOGA HOME - AESTHETIC INTENTIONS
+        ═══════════════════════════════════════════════════════════
+
+        DESIGN PHILOSOPHY:
+        - Sacred text aesthetic: Like opening a handmade book slowly, with presence
+        - Spaciousness & breath: Generous padding between sections, room to breathe
+        - Organic flow: Book-like structure with table of contents opening into chapters
+        - Warmth & earthiness: Natural tones reflecting yoga's grounding qualities
+
+        COLOR PALETTE MEANINGS:
+        - Cream (#FAF7F0): Handmade paper warmth, natural foundation
+        - Sage (#8B9A7E): Peace, grounding, nature connection
+        - Terracotta (#C4826B): Earth warmth, human touch
+        - Gold (#D4A574): Sacred light, gentle illumination
+        - Earth Brown (#5C4E47): Readable text, rooted presence
+
+        TYPOGRAPHY:
+        - Serif (Georgia) body: Literary warmth, readable contemplation
+        - Sans-serif headings: Clean spaciousness, modern clarity
+        - Generous line-height (1.8): Breathing room between thoughts
+        - Letter-spacing: Openness, not rushed
+
+        PAPER TEXTURE:
+        - Handmade watercolor paper background
+        - Always visible, creating tactile foundation
+        - Varying transparency layers create depth and rhythm
+        - Like pages of an artisan book
+
+        संतोष (Santosha): Contentment
+        ═══════════════════════════════════════════════════════════
+        */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --cream: #FAF7F0;
+            --warm-white: #FFFFFF;
+            --sage: #8B9A7E;
+            --terracotta: #C4826B;
+            --gold: #D4A574;
+            --earth-brown: #5C4E47;
+            --soft-gray: #E8E4DC;
+        }
+
+        /*
+        ─────────────────────────────────────────────────────────
+        BODY: Foundation
+        ─────────────────────────────────────────────────────────
+        The paper texture tiles seamlessly across entire page,
+        creating handmade book feeling. Cream fallback ensures
+        warmth even before texture loads.
+        */
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            line-height: 1.8;
+            color: var(--earth-brown);
+            background-image: url('img/paper.png');
+            background-repeat: repeat;
+            background-color: var(--cream);
+            font-size: 18px;
+        }
+
+        /*
+        ─────────────────────────────────────────────────────────
+        HEADINGS: Handwritten Warmth
+        ─────────────────────────────────────────────────────────
+        Beautiful handwritten font (Caveat) creates personal,
+        warm feeling like hand-lettered book titles. Moderate
+        weight and letter-spacing maintain readability while
+        adding organic, human touch.
+        */
+        h1,
+        h2,
+        h3 {
+            font-family: 'Caveat', cursive, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+        }
+
+        /*
+        ═══════════════════════════════════════════════════════════
+        HEADER: Opening Page
+        ═══════════════════════════════════════════════════════════
+        First thing visitors see. Slightly translucent so paper
+        shows through softly, with gentle blur creating frosted
+        glass effect. Border creates gentle separation like
+        turning from cover page into book.
+        */
+        header {
+            text-align: center;
+            padding: 3rem 2rem 1.5rem;
+            background-color: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--soft-gray);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            color: var(--sage);
+            margin-bottom: 0.5rem;
+            font-weight: 200;
+            letter-spacing: 0.1em;
+        }
+
+        header .logo {
+            max-width: 280px;
+            width: 70%;
+            height: auto;
+            margin: 0 auto 0.5rem;
+            display: block;
+        }
+
+        header .subtitle {
+            font-size: 1.1rem;
+            color: var(--terracotta);
+            font-style: italic;
+            letter-spacing: 0.05em;
+        }
+
+        /*
+        ═══════════════════════════════════════════════════════════
+        TABLE OF CONTENTS: The Map
+        ═══════════════════════════════════════════════════════════
+        Like a traditional book's table of contents. Needs good
+        readability while maintaining connection to paper texture.
+        Slightly more opaque than header (60% vs 50%) with gentle
+        blur creating frosted glass effect that softens the paper
+        texture behind while keeping it visible. Soft rounded
+        corners create gentle container feeling.
+        */
+        .table-of-contents {
+            max-width: 600px;
+            margin: 4rem auto;
+            padding: 3rem 2rem;
+            background-color: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 8px;
+        }
+
+        .table-of-contents h2 {
+            text-align: center;
+            font-size: 1.5rem;
+            color: var(--sage);
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        /*
+        ─────────────────────────────────────────────────────────
+        TOC LIST: Navigation with Grace
+        ─────────────────────────────────────────────────────────
+        Roman numerals (I, II, III...) create classical book feel.
+        Gold numbers catch eye gently. Hover interaction subtle
+        like turning attention to a new possibility.
+        */
+        .toc-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .toc-list li {
+            border-bottom: 1px solid var(--soft-gray);
+            padding-bottom: 0.5rem;
+        }
+
+        .toc-list a {
+            color: var(--earth-brown);
+            text-decoration: none;
+            font-size: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: color 0.3s ease;
+            font-family: 'Caveat', cursive, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-weight: 500;
+        }
+
+        .toc-list a:hover {
+            color: var(--sage);
+        }
+
+        .toc-number {
+            color: var(--gold);
+            font-family: 'Caveat', cursive, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-weight: 500;
+        }
+
+        .toc-sub {
+            margin-left: 2rem;
+            font-size: 1.25rem;
+            padding-top: 0.5rem;
+        }
+
+        /*
+        ═══════════════════════════════════════════════════════════
+        CONTENT SECTIONS: Chapters
+        ═══════════════════════════════════════════════════════════
+        Each section is a chapter in the book. Alternating
+        transparency (every other section gets light overlay)
+        creates rhythm like turning pages. Generous vertical
+        padding gives each section breathing room to be read
+        without feeling rushed.
+        */
+        section {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 6rem 2rem;
+            min-height: 60vh;
+        }
+
+        /*
+        ─────────────────────────────────────────────────────────
+        Alternating Page Effect
+        ─────────────────────────────────────────────────────────
+        Every even section gets subtle white overlay with very
+        gentle blur (5px, softer than header/TOC), creating
+        gentle rhythm as you scroll - like pages alternating
+        slightly in tone in a handmade book. Subtle blur adds
+        depth without being too prominent.
+        */
+        section:nth-child(even) {
+            background-color: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            color: var(--sage);
+            margin-bottom: 2rem;
+            text-align: center;
+            font-weight: 200;
+        }
+
+        section h3 {
+            font-size: 1.5rem;
+            color: var(--terracotta);
+            margin: 3rem 0 1rem;
+            font-weight: 300;
+        }
+
+        section p {
+            margin-bottom: 1.5rem;
+            text-align: justify;
+            hyphens: auto;
+        }
+
+        /*
+        ─────────────────────────────────────────────────────────
+        Content Placeholders
+        ─────────────────────────────────────────────────────────
+        Temporary boxes showing where content will live.
+        Slightly translucent gray with gold accent line.
+        Will be replaced with actual content.
+        */
+        .content-placeholder {
+            padding: 3rem;
+            background-color: rgba(232, 228, 220, 0.6);
+            border-left: 3px solid var(--gold);
+            font-style: italic;
+            color: var(--earth-brown);
+            opacity: 0.7;
+        }
+
+        /*
+        ─────────────────────────────────────────────────────────
+        Images: Gentle Integration
+        ─────────────────────────────────────────────────────────
+        Images flow naturally within content, with subtle border
+        creating gentle frame like photos in a handmade book.
+        Rounded corners soften edges, shadow adds gentle depth.
+        Layered shadows create soft, natural boundary blur.
+        */
+        section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 2rem 0;
+            box-shadow:
+                0 2px 4px rgba(92, 78, 71, 0.08),
+                0 4px 12px rgba(92, 78, 71, 0.12),
+                0 8px 24px rgba(92, 78, 71, 0.08);
+            border: 1px solid var(--soft-gray);
+        }
+
+        /*
+        ─────────────────────────────────────────────────────────
+        Smaller Images: Intimate Scale
+        ─────────────────────────────────────────────────────────
+        For images that work better at a smaller, more intimate
+        scale. Centered for balance.
+        */
+        section img.smaller {
+            max-width: 60%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /*
+        ═══════════════════════════════════════════════════════════
+        ORNAMENTAL DIVIDERS: Chapter Breaks
+        ═══════════════════════════════════════════════════════════
+        Small decorative meditation icon between major sections,
+        like ornamental breaks in traditional books. Creates pause,
+        moment to breathe before next chapter. Icon is small and
+        subtle, just enough to mark a transition.
+        */
+        .divider {
+            text-align: center;
+            margin: 4rem 0;
+        }
+
+        .divider img {
+            width: 120px;
+            height: auto;
+            opacity: 1;
+            margin: 0 auto;
+            display: block;
+            border: none;
+            box-shadow: none;
+            filter: brightness(0) saturate(100%) invert(55%) sepia(28%) saturate(841%) hue-rotate(328deg) brightness(88%) contrast(92%);
+        }
+
+        /*
+        ═══════════════════════════════════════════════════════════
+        FOOTER: Closing
+        ═══════════════════════════════════════════════════════════
+        Grounded, earthy close. Nearly solid background (95%)
+        creates sense of completion, like back cover of book.
+        Sanskrit text honors tradition. Spacious, warm, breathing.
+        */
+        footer {
+            text-align: center;
+            padding: 4rem 2rem 3rem;
+            background-color: rgba(92, 78, 71, 0.95);
+            color: var(--cream);
+            font-size: 1rem;
+            line-height: 2;
+        }
+
+        footer h3 {
+            font-family: 'Caveat', cursive, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-size: 2rem;
+            font-weight: 500;
+            color: var(--gold);
+            margin-bottom: 2rem;
+            letter-spacing: 0.03em;
+        }
+
+        footer .contact-section {
+            max-width: 500px;
+            margin: 0 auto 2.5rem;
+        }
+
+        footer .contact-section p {
+            margin: 1.2rem 0;
+            letter-spacing: 0.02em;
+        }
+
+        footer .divider-line {
+            width: 60px;
+            height: 1px;
+            background-color: var(--gold);
+            opacity: 0.5;
+            margin: 2.5rem auto;
+        }
+
+        footer a {
+            color: var(--gold);
+            text-decoration: none;
+            transition: color 0.3s ease;
+            border-bottom: 1px solid transparent;
+        }
+
+        footer a:hover {
+            color: var(--cream);
+            border-bottom: 1px solid var(--cream);
+        }
+
+        footer .closing {
+            margin-top: 2.5rem;
+            font-style: italic;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /*
+        ─────────────────────────────────────────────────────────
+        Smooth Navigation
+        ─────────────────────────────────────────────────────────
+        When clicking TOC links, page scrolls smoothly rather
+        than jumping. Creates gentle transition, not jarring.
+        */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /*
+        ═══════════════════════════════════════════════════════════
+        RESPONSIVE: Mobile Grace
+        ═══════════════════════════════════════════════════════════
+        On smaller screens, reduce font sizes and padding while
+        maintaining spacious feeling. Yoga practice accessible
+        on any device.
+        */
+        @media (max-width: 768px) {
+            header .logo {
+                max-width: 240px;
+                width: 85%;
+            }
+
+            section {
+                padding: 4rem 1.5rem;
+            }
+
+            section h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!--
+    ═══════════════════════════════════════════════════════════
+    HEADER SECTION
+    ═══════════════════════════════════════════════════════════
+    Simple, spacious opening. Just the name and location.
+    Like a book cover - doesn't need to say everything,
+    just welcomes you in with warmth.
+    -->
+    <header>
+        <img src="img/logo.png" alt="Santosha Yoga Home" class="logo">
+        <p class="subtitle">Dalat, Vietnam</p>
+    </header>
+
+    <!--
+    ═══════════════════════════════════════════════════════════
+    TABLE OF CONTENTS
+    ═══════════════════════════════════════════════════════════
+    Classic book structure. Shows what's inside clearly.
+    Roman numerals and arrows guide without demanding.
+    Clicking smoothly scrolls to sections below.
+    -->
+    <div class="table-of-contents">
+        <h2>Contents</h2>
+        <ul class="toc-list">
+            <li>
+                <a href="#yoga-meditation">
+                    <span><span class="toc-number">I.</span> Yoga & Meditation</span>
+                    <span>→</span>
+                </a>
+            </li>
+            <li>
+                <a href="#singing-bowl">
+                    <span><span class="toc-number">II.</span> Singing Bowl</span>
+                    <span>→</span>
+                </a>
+            </li>
+            <li>
+                <a href="#room">
+                    <span><span class="toc-number">III.</span> Room</span>
+                    <span>→</span>
+                </a>
+            </li>
+            <li>
+                <a href="#retreat">
+                    <span><span class="toc-number">IV.</span> Retreat</span>
+                    <span>→</span>
+                </a>
+            </li>
+            <li>
+                <a href="#workshop">
+                    <span><span class="toc-number">V.</span> Workshop</span>
+                    <span>→</span>
+                </a>
+                <!-- Workshop subsections: different practices offered -->
+                <ul class="toc-list toc-sub">
+                    <li><a href="#cooking"><span><span class="toc-number">a.</span> Cooking</span></a></li>
+                    <li><a href="#painting"><span><span class="toc-number">b.</span> Painting</span></a></li>
+                    <li><a href="#photography"><span><span class="toc-number">c.</span> Photography</span></a></li>
+                    <li><a href="#handwriting"><span><span class="toc-number">d.</span> Handwriting</span></a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#reference">
+                    <span><span class="toc-number">VI.</span> Reference</span>
+                    <span>→</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Ornamental chapter break -->
+    <div class="divider"><img src="img/meditate-icon.png" alt=""></div>
+
+    <!--
+    ═══════════════════════════════════════════════════════════
+    CHAPTER I: YOGA & MEDITATION
+    ═══════════════════════════════════════════════════════════
+    Core practice offerings. This section will describe:
+    - Daily class schedule
+    - Teaching philosophy (Sivananda tradition)
+    - What students can expect
+    - Teachers' backgrounds and approach
+    -->
+    <section id="yoga-meditation">
+        <h2>Yoga & Meditation</h2>
+        <div class="content-placeholder">
+            Content about yoga and meditation practices offered at Santosha will appear here.
+            This might include class schedules, teaching philosophy, styles practiced,
+            and information about the instructors' backgrounds and approach.
+        </div>
+    </section>
+
+    <div class="divider"><img src="img/meditate-icon.png" alt=""></div>
+
+    <!--
+    ═══════════════════════════════════════════════════════════
+    CHAPTER II: SINGING BOWL
+    ═══════════════════════════════════════════════════════════
+    Sound healing practice. Will describe:
+    - Tibetan singing bowl sessions
+    - Benefits of sound healing
+    - Session duration and structure
+    - Booking information
+    -->
+    <section id="singing-bowl">
+        <h2>Singing Bowl</h2>
+        <div class="content-placeholder">
+            Information about Tibetan singing bowl sessions and sound healing practices
+            will be shared here, including the benefits, session duration, and booking details.
+        </div>
+    </section>
+
+    <div class="divider"><img src="img/meditate-icon.png" alt=""></div>
+
+    <!--
+    ═══════════════════════════════════════════════════════════
+    CHAPTER III: ROOM
+    ═══════════════════════════════════════════════════════════
+    Accommodation details. Will include:
+    - Room descriptions and amenities
+    - Peaceful environment qualities
+    - Booking process and rates
+    - Photos of the space
+    -->
+    <section id="room">
+        <h2>Room</h2>
+        <img src="img/plant.jpg" alt="Peaceful room at Santosha Yoga Home" class="smaller">
+        <div class="content-placeholder">
+            Details about accommodation options, amenities, and the peaceful environment
+            of Santosha will be described here. Information about booking and rates
+            may also be included.
+        </div>
+    </section>
+
+    <div class="divider"><img src="img/meditate-icon.png" alt=""></div>
+
+    <!--
+    ═══════════════════════════════════════════════════════════
+    CHAPTER IV: RETREAT
+    ═══════════════════════════════════════════════════════════
+    Extended immersion programs. Will cover:
+    - Retreat durations and structures
+    - Daily schedules
+    - Included meals (organic vegetarian)
+    - Retreat philosophy and intentions
+    -->
+    <section id="retreat">
+        <h2>Retreat</h2>
+        <div class="content-placeholder">
+            Information about retreat programs, durations, and what participants can expect
+            from their time at Santosha will be outlined here. This might include daily
+            schedules, included meals, and retreat philosophies.
+        </div>
+    </section>
+
+    <div class="divider"><img src="img/meditate-icon.png" alt=""></div>
+
+    <!--
+    ═══════════════════════════════════════════════════════════
+    CHAPTER V: WORKSHOP
+    ═══════════════════════════════════════════════════════════
+    Creative and contemplative practices beyond yoga.
+    Four offerings, each its own subsection below.
+    -->
+    <section id="workshop">
+        <h2>Workshop</h2>
+
+        <!--
+        ─────────────────────────────────────────────────────────
+        Cooking Workshop: Mindful Food Preparation
+        ─────────────────────────────────────────────────────────
+        Learning Vietnamese vegetarian cuisine with intention.
+        Organic ingredients, traditional methods, conscious care.
+        -->
+        <h3 id="cooking">Cooking</h3>
+        <img src="img/food.jpg" alt="Mindful vegetarian cooking at Santosha" class="smaller">
+        <div class="content-placeholder">
+            Details about vegetarian cooking workshops, learning traditional Vietnamese cuisine,
+            and the philosophy of mindful food preparation.
+        </div>
+
+        <!--
+        ─────────────────────────────────────────────────────────
+        Painting Workshop: Visual Expression
+        ─────────────────────────────────────────────────────────
+        Uyen's watercolor artistry. Contemplative creation,
+        connecting with color and form, expressing inner landscape.
+        -->
+        <h3 id="painting">Painting</h3>
+        <img src="img/paintings.jpg" alt="Watercolor painting workshop at Santosha">
+        <div class="content-placeholder">
+            Information about watercolor painting workshops, artistic exploration,
+            and creative expression through visual arts.
+        </div>
+
+        <!--
+        ─────────────────────────────────────────────────────────
+        Photography Workshop: Mindful Seeing
+        ─────────────────────────────────────────────────────────
+        Capturing beauty with awareness. Technical guidance
+        combined with contemplative approach to seeing.
+        -->
+        <h3 id="photography">Photography</h3>
+        <div class="content-placeholder">
+            Details about photography workshops, mindful seeing, capturing beauty,
+            and technical guidance.
+        </div>
+
+        <!--
+        ─────────────────────────────────────────────────────────
+        Handwriting Workshop: The Art of Writing
+        ─────────────────────────────────────────────────────────
+        Calligraphy or mindful handwriting practice.
+        Meditation through pen and paper, slowing down enough
+        to make each letter beautiful.
+        -->
+        <h3 id="handwriting">Handwriting</h3>
+        <div class="content-placeholder">
+            Information about calligraphy or mindful handwriting practice,
+            connecting with the meditative aspects of writing.
+        </div>
+    </section>
+
+    <div class="divider"><img src="img/meditate-icon.png" alt=""></div>
+
+    <!--
+    ═══════════════════════════════════════════════════════════
+    CHAPTER VI: REFERENCE
+    ═══════════════════════════════════════════════════════════
+    Practical information for visitors:
+    - Contact details (phone, email, social media)
+    - Physical address and location
+    - Directions to Santosha
+    - Booking procedures
+    - Any other practical details guests need
+    -->
+    <section id="reference">
+        <h2>Reference</h2>
+        <div class="content-placeholder">
+            Contact information, location details, directions to Santosha,
+            and any other practical information for guests will be provided here.
+        </div>
+    </section>
+
+    <!--
+    ═══════════════════════════════════════════════════════════
+    FOOTER: Closing Page
+    ═══════════════════════════════════════════════════════════
+    Simple close. Name, location, Sanskrit word.
+    Like back cover - gentle completion.
+    -->
+    <footer>
+        <h3>Santosha</h3>
+
+        <div class="contact-section">
+            <p>5/5A, Khe Sanh, phường Xuân Hương<br>Đà Lạt, Lâm Đồng, Vietnam</p>
+
+            <div class="divider-line"></div>
+
+            <p><a href="tel:0868158283">0868 158 283</a></p>
+
+            <p>
+                <a href="https://www.facebook.com/profile.php?id=100087239755562&mibextid=ZbWKwL" target="_blank" rel="noopener">Facebook</a>
+                &nbsp;&nbsp;·&nbsp;&nbsp;
+                <a href="https://maps.app.goo.gl/CZrvLqDTLsqU9v5EA" target="_blank" rel="noopener">Directions</a>
+            </p>
+        </div>
+
+        <p class="closing">संतोष · Contentment</p>
+    </footer>
+
+    <!--
+    ═══════════════════════════════════════════════════════════
+    SMOOTH SCROLL NAVIGATION
+    ═══════════════════════════════════════════════════════════
+    When clicking TOC links, smoothly scroll to sections
+    rather than jumping abruptly. Creates gentle transition
+    like turning pages rather than teleporting.
+    -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
