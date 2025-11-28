@@ -282,19 +282,27 @@
 
         /*
         ─────────────────────────────────────────────────────────
-        Content Placeholders
+        Content Boxes
         ─────────────────────────────────────────────────────────
-        Temporary boxes showing where content will live.
-        Slightly translucent gray with gold accent line.
-        Will be replaced with actual content.
+        Styled boxes for content throughout the site.
+        Base styling with gold accent line and translucent background.
         */
-        .content-placeholder {
+        .content-box {
             padding: 3rem;
             background-color: rgba(232, 228, 220, 0.6);
             border-left: 3px solid var(--gold);
             font-style: italic;
+        }
+
+        /* Default style: matches placeholders, earth-brown with opacity */
+        .content-box--default {
             color: var(--earth-brown);
             opacity: 0.7;
+        }
+
+        /* English variant: sage color, full opacity */
+        .content-box--english {
+            color: var(--sage);
         }
 
         /*
@@ -565,7 +573,7 @@
         <img src="img/uyen-nhan.jpg" alt="Uyên and Nhân at Santosha Yoga Home" class="smaller">
 
         <!-- Vietnamese text -->
-        <div style="padding: 3rem; background-color: rgba(232, 228, 220, 0.6); border-left: 3px solid var(--gold); margin-bottom: 2rem; font-style: italic; color: var(--earth-brown); opacity: 0.7;">
+        <div class="content-box content-box--default" style="margin-bottom: 2rem;">
             <p>Santosha là nơi của sự ấm cúng và bình dị, nơi mà mỗi hơi thở đều được gìn giữ, mỗi khoảnh khắc đều có chỗ để nương tựa. Ngôi nhà nhỏ này được tạo nên trước hết cho chính mình, và cho những ai muốn thực hành Yoga Cổ điển Sivananda, Ayurveda và lối sống thuận theo tự nhiên – như một hành trình trở lại với bản chất nguyên sơ, thuần khiết nhất của tâm hồn.</p>
 
             <p>Các bậc thánh hiền từng nói: "Năm trăm lần ngoái nhìn nhau trong kiếp trước mới đủ duyên gặp lại nhau trong kiếp này." Vì vậy, khi bạn nói rằng bạn "ghé thăm" Santosha, mình luôn cảm nhận đó không chỉ là một cuộc viếng thăm, mà là một cuộc trở về. Trở về với nơi đã có sẵn một chỗ cho bạn trong trái tim chúng mình – như một gia đình trọn vẹn, luôn mở cửa và mở lòng.</p>
@@ -594,7 +602,7 @@
         </div>
 
         <!-- English text -->
-        <div style="padding: 3rem; background-color: rgba(232, 228, 220, 0.6); border-left: 3px solid var(--gold); color: var(--sage); font-style: italic;">
+        <div class="content-box content-box--english">
             <p>Santosha is a place of warmth and simplicity, where every breath is treasured, every moment has a place to rest. This small home was created first for ourselves, and for those who wish to practice Classical Sivananda Yoga, Ayurveda, and a life aligned with nature – as a journey back to the most primal, pure essence of the soul.</p>
 
             <p>The wise ones once said: "Five hundred glances at each other in a past life are needed to meet again in this life." So when you say you "visit" Santosha, we always feel it's not just a visit, but a homecoming. Coming home to a place where there's already a space for you in our hearts – like a complete family, always open door and open heart.</p>
@@ -638,7 +646,7 @@
     <section id="yoga-meditation">
         <h2>Yoga & Meditation</h2>
         <img src="img/yoga-meditate.jpeg" alt="Meditation practice at Santosha Yoga Home" class="smaller">
-        <div class="content-placeholder">
+        <div class="content-box content-box--default">
             Content about yoga and meditation practices offered at Santosha will appear here.
             This might include class schedules, teaching philosophy, styles practiced,
             and information about the instructors' backgrounds and approach.
@@ -658,7 +666,7 @@
     <section id="happy-kitchen">
         <h2>Happy Kitchen</h2>
         <img src="img/kitchen.jpg" alt="Shared meals at Santosha's Happy Kitchen" class="smaller">
-        <div class="content-placeholder">
+        <div class="content-box content-box--default">
             Content about the Happy Kitchen will appear here. This might include information
             about the meals shared at Santosha, the food philosophy, cooking style, and how
             nourishment is part of the experience.
@@ -680,7 +688,7 @@
     <section id="singing-bowl">
         <h2>Singing Bowl</h2>
         <img src="img/singing-bowl.jpg" alt="Tibetan singing bowl sound healing session at Santosha">
-        <div class="content-placeholder">
+        <div class="content-box content-box--default">
             Information about Tibetan singing bowl sessions and sound healing practices
             will be shared here, including the benefits, session duration, and booking details.
         </div>
@@ -701,7 +709,7 @@
     <section id="room">
         <h2>Room</h2>
         <img src="img/plant.jpg" alt="Peaceful room at Santosha Yoga Home" class="smaller">
-        <div class="content-placeholder">
+        <div class="content-box content-box--default">
             Details about accommodation options, amenities, and the peaceful environment
             of Santosha will be described here. Information about booking and rates
             may also be included.
@@ -723,7 +731,7 @@
     <section id="retreat">
         <h2>Retreat</h2>
         <img src="img/retreat.jpg" alt="Retreat experience at Santosha Yoga Home" class="smaller">
-        <div class="content-placeholder">
+        <div class="content-box content-box--default">
             Information about retreat programs, durations, and what participants can expect
             from their time at Santosha will be outlined here. This might include daily
             schedules, included meals, and retreat philosophies.
@@ -751,7 +759,7 @@
         -->
         <h3 id="cooking">Cooking</h3>
         <img src="img/food.jpg" alt="Mindful vegetarian cooking at Santosha" class="smaller">
-        <div class="content-placeholder">
+        <div class="content-box content-box--default">
             Details about vegetarian cooking workshops, learning traditional Vietnamese cuisine,
             and the philosophy of mindful food preparation.
         </div>
@@ -765,7 +773,7 @@
         -->
         <h3 id="painting">Painting</h3>
         <img src="img/paintings.jpg" alt="Watercolor painting workshop at Santosha">
-        <div class="content-placeholder">
+        <div class="content-box content-box--default">
             Information about watercolor painting workshops, artistic exploration,
             and creative expression through visual arts.
         </div>
@@ -778,7 +786,7 @@
         combined with contemplative approach to seeing.
         -->
         <h3 id="photography">Photography</h3>
-        <div class="content-placeholder">
+        <div class="content-box content-box--default">
             Details about photography workshops, mindful seeing, capturing beauty,
             and technical guidance.
         </div>
@@ -792,7 +800,7 @@
         to make each letter beautiful.
         -->
         <h3 id="handwriting">Handwriting</h3>
-        <div class="content-placeholder">
+        <div class="content-box content-box--default">
             Information about calligraphy or mindful handwriting practice,
             connecting with the meditative aspects of writing.
         </div>
@@ -813,7 +821,7 @@
     -->
     <section id="reference">
         <h2>Reference</h2>
-        <div class="content-placeholder">
+        <div class="content-box content-box--default">
             Contact information, location details, directions to Santosha,
             and any other practical information for guests will be provided here.
         </div>
