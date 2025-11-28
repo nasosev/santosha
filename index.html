@@ -541,6 +541,11 @@
                 </a>
             </li>
         </ul>
+
+        <div style="text-align: center; margin-top: 2.5rem; padding-top: 2rem; border-top: 1px solid var(--soft-gray); font-family: 'Caveat', cursive; font-size: 1.5rem; line-height: 1.8;">
+            <p><a href="mailto:uyen@santoshavietnam.com" style="color: var(--terracotta); text-decoration: none; transition: color 0.3s ease;">uyen@santoshavietnam.com</a></p>
+            <p><a href="tel:0868158283" style="color: var(--terracotta); text-decoration: none; transition: color 0.3s ease;">0868 158 283</a></p>
+        </div>
     </div>
 
     <!-- Ornamental chapter break -->
@@ -825,6 +830,8 @@
 
             <div class="divider-line"></div>
 
+            <p><a href="mailto:uyen@santoshavietnam.com">uyen@santoshavietnam.com</a></p>
+
             <p><a href="tel:0868158283">0868 158 283</a></p>
 
             <p>
@@ -918,6 +925,16 @@
         });
         expandHeartEnBtn.addEventListener('mouseleave', function() {
             this.style.backgroundColor = 'var(--sage)';
+        });
+
+        // Table of contents contact link hover effects
+        document.querySelectorAll('.table-of-contents a[href^="mailto"], .table-of-contents a[href^="tel"]').forEach(link => {
+            link.addEventListener('mouseenter', function() {
+                this.style.color = 'var(--sage)';
+            });
+            link.addEventListener('mouseleave', function() {
+                this.style.color = 'var(--terracotta)';
+            });
         });
     </script>
 </body>
