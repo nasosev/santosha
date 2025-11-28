@@ -59,7 +59,9 @@
             --soft-gray: #E8E4DC;
             --soft-blue: #6B9FA8;
             --overlay-bg: rgba(255, 255, 255, 0.4);
-            --overlay-blur: 5px;
+            --header-blur: 8px;
+            --toc-blur: 6px;
+            --section-blur: 5px;
         }
 
         /*
@@ -111,8 +113,8 @@
             text-align: center;
             padding: 3rem 2rem 1.5rem;
             background-color: var(--overlay-bg);
-            backdrop-filter: blur(var(--overlay-blur));
-            -webkit-backdrop-filter: blur(var(--overlay-blur));
+            backdrop-filter: blur(var(--header-blur));
+            -webkit-backdrop-filter: blur(var(--header-blur));
             border-bottom: 1px solid var(--soft-gray);
         }
 
@@ -155,8 +157,8 @@
             margin: 4rem auto;
             padding: 3rem 2rem;
             background-color: var(--overlay-bg);
-            backdrop-filter: blur(var(--overlay-blur));
-            -webkit-backdrop-filter: blur(var(--overlay-blur));
+            backdrop-filter: blur(var(--toc-blur));
+            -webkit-backdrop-filter: blur(var(--toc-blur));
             border-radius: 8px;
         }
 
@@ -258,8 +260,8 @@
         */
         section:nth-child(even) {
             background-color: var(--overlay-bg);
-            backdrop-filter: blur(var(--overlay-blur));
-            -webkit-backdrop-filter: blur(var(--overlay-blur));
+            backdrop-filter: blur(var(--section-blur));
+            -webkit-backdrop-filter: blur(var(--section-blur));
         }
 
         section h2 {
