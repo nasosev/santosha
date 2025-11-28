@@ -3,7 +3,7 @@
 
 ## Project Overview
 
-This is a website for Santosha Yoga Home in Dalat, Vietnam - a sacred space for yoga, meditation, sound healing, and contemplative workshops. The site is being created as a gift of reciprocity for Uyen and Nhan, the teachers who host this beautiful space.
+This is a website for Santosha Yoga Home in Dalat, Vietnam - a sacred space for yoga, meditation, sound healing, and contemplative workshops. The site is being created as a gift of reciprocity for Uyên and Nhân, the teachers who host this beautiful space.
 
 ## Design Philosophy
 
@@ -90,16 +90,18 @@ The watercolor paper texture (paper.png) tiles seamlessly across the entire page
 
 ### Section Organization
 ```
-I.   Yoga & Meditation
-II.  Singing Bowl
-III. Room
-IV.  Retreat
-V.   Workshop
-     - Cooking
-     - Painting
-     - Photography
-     - Handwriting
-VI.  Reference
+I.    Heart of Santosha
+II.   Yoga & Meditation
+III.  Happy Kitchen
+IV.   Singing Bowl
+V.    Room
+VI.   Retreat
+VII.  Workshop
+      - Cooking
+      - Painting
+      - Photography
+      - Handwriting
+VIII. Reference
 ```
 
 ### Navigation Behavior
@@ -111,41 +113,55 @@ VI.  Reference
 
 ### What Each Section Will Contain
 
-**I. Yoga & Meditation**
+**I. Heart of Santosha**
+- About section describing Santosha Yoga Home
+- The story and spirit of the space
+- What makes Santosha unique
+- The welcoming presence of Uyên and Nhân
+- Values and philosophy of the home
+
+**II. Yoga & Meditation**
 - Daily class schedule
 - Teaching philosophy (Sivananda tradition)
 - What students can expect
-- Teachers' backgrounds (Uyen and Nhan)
+- Teachers' backgrounds (Uyên and Nhân)
 - Types of practice offered
 
-**II. Singing Bowl**
+**III. Happy Kitchen**
+- Nourishment and sharing meals together
+- Food philosophy and cooking style
+- How meals are part of the Santosha experience
+- Organic vegetarian cuisine
+- Mindful food preparation
+
+**IV. Singing Bowl**
 - Tibetan singing bowl sessions
 - Sound healing benefits
 - Session structure and duration
 - Booking information
 
-**III. Room**
+**V. Room**
 - Accommodation descriptions
 - Room amenities
 - Peaceful environment qualities
 - Rates and booking process
 - Photos of the space
 
-**IV. Retreat**
+**VI. Retreat**
 - Extended program offerings
 - Retreat durations and schedules
 - Daily structure
 - Included meals (organic vegetarian)
 - Retreat philosophy and intentions
 
-**V. Workshop**
+**VII. Workshop**
 Each subsection describes different contemplative practices:
 - **Cooking**: Vietnamese vegetarian cuisine, mindful preparation
-- **Painting**: Uyen's watercolor artistry, contemplative creation
+- **Painting**: Uyên's watercolor artistry, contemplative creation
 - **Photography**: Mindful seeing, capturing beauty with awareness
 - **Handwriting**: Calligraphy, meditation through pen and paper
 
-**VI. Reference**
+**VIII. Reference**
 - Contact information (phone, email, social media)
 - Physical address and location in Dalat
 - Directions to Santosha
@@ -193,7 +209,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 ### Phase 2: Visual Enhancement
 - [ ] Add gallery section for photos
-- [ ] Include Uyen's watercolor artwork
+- [ ] Include Uyên's watercolor artwork
 - [ ] Possibly add gentle animations (very subtle, not distracting)
 - [ ] Consider adding a simple contact form
 
@@ -259,7 +275,7 @@ When working on this project:
 
 ## Gratitude Note
 
-This website is being created as a gift for Uyen and Nhan, who have provided beautiful space, teaching, and nourishment at Santosha Yoga Home during a significant healing journey. The care put into this design reflects the care they've shown. 
+This website is being created as a gift for Uyên and Nhân, who have provided beautiful space, teaching, and nourishment at Santosha Yoga Home during a significant healing journey. The care put into this design reflects the care they've shown. 
 
 **संतोष (Santosha)**: Contentment - the feeling we hope to evoke through this design.
 

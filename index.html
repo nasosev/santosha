@@ -125,7 +125,7 @@
             max-width: 280px;
             width: 70%;
             height: auto;
-            margin: 0 auto 0.5rem;
+            margin: 0 auto 0;
             display: block;
         }
 
@@ -151,9 +151,9 @@
             max-width: 600px;
             margin: 4rem auto;
             padding: 3rem 2rem;
-            background-color: rgba(255, 255, 255, 0.5);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
             border-radius: 8px;
         }
 
@@ -200,6 +200,18 @@
 
         .toc-list a:hover {
             color: var(--sage);
+        }
+
+        .toc-list a:hover .toc-arrow {
+            color: var(--terracotta);
+        }
+
+        .toc-arrow {
+            font-family: 'Caveat', cursive;
+            font-size: 1.8rem;
+            color: var(--gold);
+            transition: color 0.3s ease;
+            font-weight: 400;
         }
 
         .toc-number {
@@ -467,40 +479,52 @@
     TABLE OF CONTENTS
     ═══════════════════════════════════════════════════════════
     Classic book structure. Shows what's inside clearly.
-    Roman numerals and arrows guide without demanding.
+    Roman numerals and gentle flower ornaments guide without demanding.
     Clicking smoothly scrolls to sections below.
     -->
     <div class="table-of-contents">
         <h2>Contents</h2>
         <ul class="toc-list">
             <li>
+                <a href="#heart-of-santosha">
+                    <span><span class="toc-number">I.</span> Heart of Santosha</span>
+                    <span class="toc-arrow">❀</span>
+                </a>
+            </li>
+            <li>
                 <a href="#yoga-meditation">
-                    <span><span class="toc-number">I.</span> Yoga & Meditation</span>
-                    <span>→</span>
+                    <span><span class="toc-number">II.</span> Yoga & Meditation</span>
+                    <span class="toc-arrow">❀</span>
+                </a>
+            </li>
+            <li>
+                <a href="#happy-kitchen">
+                    <span><span class="toc-number">III.</span> Happy Kitchen</span>
+                    <span class="toc-arrow">❀</span>
                 </a>
             </li>
             <li>
                 <a href="#singing-bowl">
-                    <span><span class="toc-number">II.</span> Singing Bowl</span>
-                    <span>→</span>
+                    <span><span class="toc-number">IV.</span> Singing Bowl</span>
+                    <span class="toc-arrow">❀</span>
                 </a>
             </li>
             <li>
                 <a href="#room">
-                    <span><span class="toc-number">III.</span> Room</span>
-                    <span>→</span>
+                    <span><span class="toc-number">V.</span> Room</span>
+                    <span class="toc-arrow">❀</span>
                 </a>
             </li>
             <li>
                 <a href="#retreat">
-                    <span><span class="toc-number">IV.</span> Retreat</span>
-                    <span>→</span>
+                    <span><span class="toc-number">VI.</span> Retreat</span>
+                    <span class="toc-arrow">❀</span>
                 </a>
             </li>
             <li>
                 <a href="#workshop">
-                    <span><span class="toc-number">V.</span> Workshop</span>
-                    <span>→</span>
+                    <span><span class="toc-number">VII.</span> Workshop</span>
+                    <span class="toc-arrow">❀</span>
                 </a>
                 <!-- Workshop subsections: different practices offered -->
                 <ul class="toc-list toc-sub">
@@ -512,8 +536,8 @@
             </li>
             <li>
                 <a href="#reference">
-                    <span><span class="toc-number">VI.</span> Reference</span>
-                    <span>→</span>
+                    <span><span class="toc-number">VIII.</span> Reference</span>
+                    <span class="toc-arrow">❀</span>
                 </a>
             </li>
         </ul>
@@ -524,7 +548,77 @@
 
     <!--
     ═══════════════════════════════════════════════════════════
-    CHAPTER I: YOGA & MEDITATION
+    CHAPTER I: HEART OF SANTOSHA
+    ═══════════════════════════════════════════════════════════
+    About section describing Santosha Yoga Home. This section
+    will introduce the space, its spirit, and what makes it
+    special. A welcoming threshold to understand the heart
+    of this sacred place.
+    -->
+    <section id="heart-of-santosha">
+        <h2>Heart of Santosha</h2>
+        <img src="img/uyen-nhan.jpg" alt="Uyên and Nhân at Santosha Yoga Home" class="smaller">
+
+        <div style="padding: 3rem; background-color: rgba(232, 228, 220, 0.6); border-left: 3px solid var(--gold);">
+            <p>Santosha là nơi của sự ấm cúng và bình dị, nơi mà mỗi hơi thở đều được gìn giữ, mỗi khoảnh khắc đều có chỗ để nương tựa. Ngôi nhà nhỏ này được tạo nên trước hết cho chính mình, và cho những ai muốn thực hành Yoga Cổ điển Sivananda, Ayurveda và lối sống thuận theo tự nhiên – như một hành trình trở lại với bản chất nguyên sơ, thuần khiết nhất của tâm hồn.</p>
+
+            <p>Các bậc thánh hiền từng nói: "Năm trăm lần ngoái nhìn nhau trong kiếp trước mới đủ duyên gặp lại nhau trong kiếp này." Vì vậy, khi bạn nói rằng bạn "ghé thăm" Santosha, mình luôn cảm nhận đó không chỉ là một cuộc viếng thăm, mà là một cuộc trở về. Trở về với nơi đã có sẵn một chỗ cho bạn trong trái tim chúng mình – như một gia đình trọn vẹn, luôn mở cửa và mở lòng.</p>
+
+            <p>Mong một ngày bạn quay trở lại, cùng bên nhau trong giờ thực tập, san sẻ bữa cơm ấm nóng, nâng niu một ngụm trà thơm, rồi mỉm cười thật hiền. Để khi rời đi, bạn mang theo đủ sự ấm áp, đủ sự an nhiên và thật nhiều năng lượng dịu lành cho hành trình trở về hạnh phúc bình an của riêng mình.</p>
+
+            <p>Cảm ơn bạn đã đến, cảm ơn bạn đã về.</p>
+
+            <button id="expandHeartBtn" style="margin-top: 2rem; padding: 0.75rem 2rem; background-color: var(--sage); color: var(--warm-white); border: none; border-radius: 4px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 1rem; font-weight: 400; letter-spacing: 0.02em; cursor: pointer; transition: background-color 0.3s ease; display: block; margin-left: auto; margin-right: auto;">Đọc thêm</button>
+
+            <div id="expandedHeart" style="max-height: 0; overflow: hidden; transition: max-height 0.6s ease, margin-top 0.6s ease, padding-top 0.6s ease, opacity 0.6s ease; opacity: 0; margin-top: 0; padding-top: 0; border-top: 1px solid var(--soft-gray);">
+                <p>Ở Santosha, mọi thứ dường như chậm lại. Từng góc nhỏ đều được chăm chút với sự tinh tế, hài hòa từ cảm nhận của hai con người đồng hành, tạo nên một nét riêng cốt lõi. Ngôi nhà không chỉ là nơi trú ngụ, mà trở thành lối sống hiền hòa, nơi yêu thương được nuôi dưỡng từng ngày.</p>
+
+                <p><strong>Ấm cúng.</strong> Ở nơi nào có lửa, nơi đó có ánh sáng và hơi ấm lan tỏa. Ngọn lửa nhỏ trong ngôi nhà Santosha không chỉ sưởi ấm không gian, mà còn sưởi ấm trái tim những người bước vào, xua tan giá lạnh và trống trải.</p>
+
+                <p><strong>Bình dị.</strong> Cuộc sống ở đây là sự mộc mạc, giản đơn, trong trẻo và thanh khiết. Mỗi chi tiết, từ một chiếc bàn gỗ nhỏ đến những chậu cây xinh xinh, đều tôn vinh vẻ đẹp của sự giản dị, khiến tâm hồn nhẹ nhàng và bình yên.</p>
+
+                <p><strong>Dung dưỡng.</strong> Ở Santosha, mọi người học cách hiện diện trọn vẹn trong khoảnh khắc hiện tại, lắng nghe và thấu hiểu nhau. Những lời nói dịu dàng, những cử chỉ chân thành, là cách mỗi người nâng đỡ và chăm sóc nhau mỗi ngày.</p>
+
+                <p><strong>Hòa hợp.</strong> Ở đây, sự hòa hợp không chỉ diễn ra giữa các cá nhân mà còn trong mỗi con người và với vũ trụ. Sự cân bằng này tạo nên một nhịp sống thanh thản, nơi tâm an vạn sự an, nơi cuộc sống trở thành một bản nhạc dịu dàng của sự kết nối và sẻ chia.</p>
+
+                <p><strong>Biết ơn.</strong> Từ sâu thẳm, ngôi nhà nhắc nhở rằng "chừng nào còn biết ơn, chừng đó còn hạnh phúc." Mỗi khoảnh khắc trôi qua, dù nhỏ bé hay giản đơn, đều là món quà để trân trọng và cảm nhận.</p>
+
+                <p>Ngôi nhà Santosha không chỉ là nơi chốn, mà là trạng thái tâm hồn, nơi ấm áp, bình dị, dung dưỡng và hòa hợp trở thành bản chất của cuộc sống.</p>
+            </div>
+
+            <p style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--soft-gray); font-style: italic; color: var(--sage);">Santosha is a place of warmth and simplicity, where every breath is treasured, every moment has a place to rest. This small home was created first for ourselves, and for those who wish to practice Classical Sivananda Yoga, Ayurveda, and a life aligned with nature – as a journey back to the most primal, pure essence of the soul.</p>
+
+            <p style="font-style: italic; color: var(--sage);">The wise ones once said: "Five hundred glances at each other in a past life are needed to meet again in this life." So when you say you "visit" Santosha, we always feel it's not just a visit, but a homecoming. Coming home to a place where there's already a space for you in our hearts – like a complete family, always open door and open heart.</p>
+
+            <p style="font-style: italic; color: var(--sage);">We hope one day you return, to be together in practice, to share a warm meal, to cherish a sip of fragrant tea, and to smile with kindness. So that when you leave, you carry with you enough warmth, enough serenity, and abundant gentle energy for your own journey home to peace and happiness.</p>
+
+            <p style="font-style: italic; color: var(--sage);">Thank you for coming, thank you for returning home.</p>
+
+            <button id="expandHeartEnBtn" style="margin-top: 2rem; padding: 0.75rem 2rem; background-color: var(--sage); color: var(--warm-white); border: none; border-radius: 4px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 1rem; font-weight: 400; letter-spacing: 0.02em; cursor: pointer; transition: background-color 0.3s ease; display: block; margin-left: auto; margin-right: auto;">Read more</button>
+
+            <div id="expandedHeartEn" style="max-height: 0; overflow: hidden; transition: max-height 0.6s ease, margin-top 0.6s ease, padding-top 0.6s ease, opacity 0.6s ease; opacity: 0; margin-top: 0; padding-top: 0; border-top: 1px solid var(--soft-gray); font-style: italic; color: var(--sage);">
+                <p>At Santosha, everything seems to slow down. Every small corner is carefully tended with subtlety, harmony from the perception of two companions, creating a unique core essence. The house is not just a place to stay, but becomes a gentle way of life, where love is nurtured every day.</p>
+
+                <p><strong>Warmth.</strong> Where there is fire, there is light and warmth spreading. The small flame in Santosha house not only warms the space, but also warms the hearts of those who enter, dispelling the cold and emptiness.</p>
+
+                <p><strong>Simplicity.</strong> Life here is rustic, simple, pure and clean. Every detail, from a small wooden table to lovely plant pots, honors the beauty of simplicity, making the soul light and peaceful.</p>
+
+                <p><strong>Nurturing.</strong> At Santosha, people learn to be fully present in the current moment, to listen and understand each other. Gentle words, sincere gestures, are how each person supports and cares for one another every day.</p>
+
+                <p><strong>Harmony.</strong> Here, harmony happens not only between individuals but also within each person and with the universe. This balance creates a tranquil rhythm of life, where peace in mind brings peace to all things, where life becomes a gentle melody of connection and sharing.</p>
+
+                <p><strong>Gratitude.</strong> From deep within, the house reminds us that "as long as we are grateful, we are happy." Each moment that passes, whether small or simple, is a gift to cherish and feel.</p>
+
+                <p>Santosha house is not just a place, but a state of soul, where warmth, simplicity, nurturing and harmony become the essence of life.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"><img src="img/meditate-icon.png" alt=""></div>
+
+    <!--
+    ═══════════════════════════════════════════════════════════
+    CHAPTER II: YOGA & MEDITATION
     ═══════════════════════════════════════════════════════════
     Core practice offerings. This section will describe:
     - Daily class schedule
@@ -546,7 +640,27 @@
 
     <!--
     ═══════════════════════════════════════════════════════════
-    CHAPTER II: SINGING BOWL
+    CHAPTER III: HAPPY KITCHEN
+    ═══════════════════════════════════════════════════════════
+    Nourishment and sharing meals together. This section will
+    describe the kitchen, food philosophy, and how meals are
+    shared as part of the Santosha experience.
+    -->
+    <section id="happy-kitchen">
+        <h2>Happy Kitchen</h2>
+        <img src="img/kitchen.jpg" alt="Shared meals at Santosha's Happy Kitchen">
+        <div class="content-placeholder">
+            Content about the Happy Kitchen will appear here. This might include information
+            about the meals shared at Santosha, the food philosophy, cooking style, and how
+            nourishment is part of the experience.
+        </div>
+    </section>
+
+    <div class="divider"><img src="img/meditate-icon.png" alt=""></div>
+
+    <!--
+    ═══════════════════════════════════════════════════════════
+    CHAPTER IV: SINGING BOWL
     ═══════════════════════════════════════════════════════════
     Sound healing practice. Will describe:
     - Tibetan singing bowl sessions
@@ -567,7 +681,7 @@
 
     <!--
     ═══════════════════════════════════════════════════════════
-    CHAPTER III: ROOM
+    CHAPTER V: ROOM
     ═══════════════════════════════════════════════════════════
     Accommodation details. Will include:
     - Room descriptions and amenities
@@ -589,7 +703,7 @@
 
     <!--
     ═══════════════════════════════════════════════════════════
-    CHAPTER IV: RETREAT
+    CHAPTER VI: RETREAT
     ═══════════════════════════════════════════════════════════
     Extended immersion programs. Will cover:
     - Retreat durations and structures
@@ -611,7 +725,7 @@
 
     <!--
     ═══════════════════════════════════════════════════════════
-    CHAPTER V: WORKSHOP
+    CHAPTER VII: WORKSHOP
     ═══════════════════════════════════════════════════════════
     Creative and contemplative practices beyond yoga.
     Four offerings, each its own subsection below.
@@ -637,7 +751,7 @@
         ─────────────────────────────────────────────────────────
         Painting Workshop: Visual Expression
         ─────────────────────────────────────────────────────────
-        Uyen's watercolor artistry. Contemplative creation,
+        Uyên's watercolor artistry. Contemplative creation,
         connecting with color and form, expressing inner landscape.
         -->
         <h3 id="painting">Painting</h3>
@@ -679,7 +793,7 @@
 
     <!--
     ═══════════════════════════════════════════════════════════
-    CHAPTER VI: REFERENCE
+    CHAPTER VIII: REFERENCE
     ═══════════════════════════════════════════════════════════
     Practical information for visitors:
     - Contact details (phone, email, social media)
@@ -743,6 +857,67 @@
                     });
                 }
             });
+        });
+
+        // Expandable Heart of Santosha - Vietnamese
+        const expandHeartBtn = document.getElementById('expandHeartBtn');
+        const expandedHeart = document.getElementById('expandedHeart');
+        let isExpandedVi = false;
+
+        expandHeartBtn.addEventListener('click', function() {
+            if (!isExpandedVi) {
+                expandedHeart.style.maxHeight = expandedHeart.scrollHeight + 'px';
+                expandedHeart.style.marginTop = '2rem';
+                expandedHeart.style.paddingTop = '2rem';
+                expandedHeart.style.opacity = '1';
+                expandHeartBtn.textContent = 'Thu gọn';
+                isExpandedVi = true;
+            } else {
+                expandedHeart.style.maxHeight = '0';
+                expandedHeart.style.marginTop = '0';
+                expandedHeart.style.paddingTop = '0';
+                expandedHeart.style.opacity = '0';
+                expandHeartBtn.textContent = 'Đọc thêm';
+                isExpandedVi = false;
+            }
+        });
+
+        // Expandable Heart of Santosha - English
+        const expandHeartEnBtn = document.getElementById('expandHeartEnBtn');
+        const expandedHeartEn = document.getElementById('expandedHeartEn');
+        let isExpandedEn = false;
+
+        expandHeartEnBtn.addEventListener('click', function() {
+            if (!isExpandedEn) {
+                expandedHeartEn.style.maxHeight = expandedHeartEn.scrollHeight + 'px';
+                expandedHeartEn.style.marginTop = '2rem';
+                expandedHeartEn.style.paddingTop = '2rem';
+                expandedHeartEn.style.opacity = '1';
+                expandHeartEnBtn.textContent = 'Show less';
+                isExpandedEn = true;
+            } else {
+                expandedHeartEn.style.maxHeight = '0';
+                expandedHeartEn.style.marginTop = '0';
+                expandedHeartEn.style.paddingTop = '0';
+                expandedHeartEn.style.opacity = '0';
+                expandHeartEnBtn.textContent = 'Read more';
+                isExpandedEn = false;
+            }
+        });
+
+        // Button hover effects
+        expandHeartBtn.addEventListener('mouseenter', function() {
+            this.style.backgroundColor = '#7A8970';
+        });
+        expandHeartBtn.addEventListener('mouseleave', function() {
+            this.style.backgroundColor = 'var(--sage)';
+        });
+
+        expandHeartEnBtn.addEventListener('mouseenter', function() {
+            this.style.backgroundColor = '#7A8970';
+        });
+        expandHeartEnBtn.addEventListener('mouseleave', function() {
+            this.style.backgroundColor = 'var(--sage)';
         });
     </script>
 </body>
